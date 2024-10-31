@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Itinerary</title>
+  <link rel="stylesheet" href="itinerary.css">
+</head>
+<body>
+  <header>
+    <h1>World Explorer</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="itinerary.html" class="nav-link">Itinerary</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h3>Itinerary</h3>
+      <input type="text" id="activity-input" placeholder="Activity" required>
+      <input type="date" id="date-input" required>
+      <input type="time" id="time-input" required>
+      <input type="hidden" id="edit-id">
+      <button id="add-itinerary-btn">Add Activity</button>
+      <button id="update-itinerary-btn" style="display: none;">Update Activity</button>
+      <button id="clear-itinerary-btn">Clear Itinerary</button>
+
+      <div id="itinerary-list"></div>
+    </section>
+
+    <section>
+      <h3>Search Itinerary</h3>
+      <input type="text" id="search-input" placeholder="Search Activity">
+      <button id="search-itinerary-btn">Search</button>
+      <div id="search-results"></div>
+    </section>
+  </main>
+  <script src="itinerary.js"></script>
+</body>
+</html>

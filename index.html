@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>World Explorer</h1>
+        <h3>Explore the globe like never before with World Explorer.</h3>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="itinerary.html" class="nav-link">Itinerary</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="card-container">
+            <!-- Country Search Card -->
+            <section id="country-search" class="card">
+                <h2>Search for a Country</h2>
+                <input type="text" id="country-input" placeholder="Enter country name" />
+                <button id="search-btn">Search</button>
+            </section>
+
+            <!-- Country Details Card -->
+            <section id="country-details" class="card">
+                <h2>Country Details</h2>
+                <div id="country-info">
+                    <p>Enter a country name above and click "Search" to see details here.</p>
+                </div>
+            </section>
+
+            <!-- Itinerary Card -->
+            <section id="itinerary" class="card">
+                <h2>Your Itinerary</h2>
+                <div id="itinerary-form">
+                    <input type="text" id="activity-input" placeholder="Enter activity" required />
+                    <input type="date" id="date-input" required />
+                    <input type="time" id="time-input" required />
+                    <button id="add-itinerary-btn">Add to Itinerary</button>
+                </div>
+                <ul id="itinerary-list"></ul>
+            </section>
+            
+            <!-- Nearby Countries Section -->
+            <section id="nearby-countries" class="card">
+                <h2>Nearby Countries</h2>
+                <div id="nearby-countries-info">
+                    <p>No nearby countries found.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
